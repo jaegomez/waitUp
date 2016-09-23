@@ -13,8 +13,8 @@
 	  <p style="text-align: center;"><strong>Make your Reservation!</strong></p>
 	  <br>
 	  <div class="buttonAlignment" style="align: center;">
-		  <p><a class="btn btn-primary btn-lg" href="tables.html" role="button" style="align: center;"><span class="glyphicon glyphicon-equalizer"></span> View Tables</a></p>
-		  <p><a class="btn btn-default btn-lg" href="home.html" role="button" style="align: center"><span class="glyphicon glyphicon-home"></span></a></p>
+		  <p><a class="btn btn-primary btn-lg" href="/tables" role="button" style="align: center;"><span class="glyphicon glyphicon-equalizer"></span> View Tables</a></p>
+		  <p><a class="btn btn-default btn-lg" href="/home" role="button" style="align: center"><span class="glyphicon glyphicon-home"></span></a></p>
 	  </div>
 	</div>
 	<div class="row" style="margin: 0 auto;">
@@ -54,7 +54,22 @@
 
 			</div>
 </div>
+
+<script type="text/javascript">
+
+	// Capture Button Click
+$(".submit").on("click", function() {
+
+	// Code in the logic for storing and retrieving the most recent user.
+	var reservationName = $('#reservationName').val().trim();
+	var reservationNumber = $('#reservationNumber').val().trim();
+	var reservationEmail = $('#reservationEmail').val().trim();
+	var reservationID = $('#reservationID').val().trim();
+
+</script>
 </div>
+
+
 
 </body>
 </html>
